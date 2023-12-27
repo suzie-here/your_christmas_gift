@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <title>your christmas gift</title>
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text"><%= hiMessage%></h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "startButton" onclick="nextPage()"><%= startMessage2%></button>
+                <script>
+                    function nextPage(){
+                        document.body.classList.add('fadeOut');
+
+                        setTimeout(function () {
+    window.location.href = "/message";
+  }, 1000);
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
+

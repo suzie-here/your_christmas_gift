@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>some more messages❤️</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./styles/messages.css">
+
+
+</head>
+<body>
+<!--a href="../index.html" id="heart-link"-->
+  <div>
+    <div class="paper heart" id="paperHeartClick" onclick="nextPage()"></div>
+    <script>
+      function nextPage(){
+        document.body.classList.add('fadeOut');
+        setTimeout(function () {window.location.href = "/index";}, 1000);
+      }
+    </script>
+  </div>
+<!--/a-->
+
+<div class="paper image selfie">
+  <p><%=messagesMessage4%></p>
+   <img src = <%=messagesSelfieImage%> />
+</div>
+
+
+<div class="paper">
+  <p><%=messagesMessage3%></p>
+</div>
+
+
+
+<div class="paper red">
+<p class="p1"><%=messagesMessage2%></p>
+</div>
+
+<div class="paper">
+<p class="p1"><%=messagesMessage1%></p>
+</div>
+
+<div class="paper one">
+<p class="p1">Drag the papers to move!</p>
+</div>
+  <script  src="./scripts/script.js"></script>
+
+</body>
+</html>

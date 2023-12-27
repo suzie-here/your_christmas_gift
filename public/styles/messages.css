@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; margin: 0;
+  margin: 0;
+  background-size: 1000px;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  background-position: center center;
+  position: relative;
+  transition: opacity 1s;
+  animation: grow 1s;
+}
+
+@keyframes grow {
+  0% { transform: scale(.2); }
+100% { transform: scale(1); }
+}
+
+body.fadeOut {
+  opacity: 0;
+}
+
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+/*  min-width: 800px; */
+  max-width: 500px;
+  max-height: 600px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.one {
+  width: 300px; height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+  transition: transform 0.3s, filter 0.3s, opacity 0.3s;
+}
+
+.selfie {
+  height: auto;
+  width: 300px;
+}
+
+.paper.image.selfie p {
+  font-size: 30px;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+  text-align: center;
+}
+
+img {
+  max-height: 300px;
+  width: 300px;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('../images/heart.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.paper.heart:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+p {
+  font-family: 'Zeyada'; line-height: 1; font-weight:bold;
+  font-size: 50px;
+  color: rgb(0, 0, 100);
+  opacity: 0.75;
+  user-select: none;
+  
+  /*filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));*/
+}
